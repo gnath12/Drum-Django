@@ -14,7 +14,41 @@
         href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
         rel="stylesheet">
 
-    <title>instagram </title>
+    <style>
+        .post_box {
+            background-color: white;
+            width: 480px;
+            margin: 10px;
+            height: 480px;
+        }
+
+        .main_body {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+        }
+
+        .feed_body {
+            background-color: red;
+            margin-right: 100px;
+            width: 500px;
+            height: 2000px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile_body {
+            background-color: yellow;
+            width: 300px;
+            height: 1000px;
+            left: 72%;
+            position: fixed;
+        }
+
+    </style>
+
+
+        <title>instagram </title>
 </head>
 <body>
     <!-- 상단 내비게이션 -->
@@ -33,12 +67,17 @@
     </nav>
 
     <!-- 메인 바디 -->
-    <div style="display: flex; justify-content: center; padding-top: 50px;">
-        <div style="background-color: red; margin-right: 100px; width: 500px; height: 2000px;">
-          피드
+    <div class="main_body">
+        <div class="border feed_body"">
+            피드
+            <div class="border post_box" >
+                게시글
+            </div>
+           
+
         </div>
-        <div style="background-color: yellow; width: 300px; height: 1000px; left: 72%; position: fixed;">
-          프로필
+        <div class="profile_body"">
+            프로필
         </div >
     </div>
 
